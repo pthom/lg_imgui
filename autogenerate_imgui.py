@@ -26,11 +26,8 @@ def autogenerate():
 
     # Configure options
     options = my_code_style_options()
-
     options_imgui_h = copy.deepcopy(options)
     options_imgui_h.fn_exclude_by_name__regexes += ["^InputText"]
-
-    # generated_code = litgen.generate_code(options_imgui_h, filename=input_cpp_header, add_boxed_types_definitions=True)
 
     files_and_options_list = litgen.CppFilesAndOptionsList()
     files_and_options_list.files_and_options = [
