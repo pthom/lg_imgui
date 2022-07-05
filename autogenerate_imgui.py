@@ -6,7 +6,7 @@ from litgen.litgen_options_imgui import litgen_options_imgui
 
 THIS_DIR = os.path.dirname(__file__)
 print(f"{THIS_DIR=}")
-CPP_HEADERS_DIR = THIS_DIR + "/imgui"
+CPP_HEADERS_DIR = THIS_DIR + "/external/imgui"
 CPP_GENERATED_PYBIND_DIR = THIS_DIR + "/bindings"
 assert os.path.isdir(CPP_HEADERS_DIR)
 assert os.path.isdir(CPP_GENERATED_PYBIND_DIR)
