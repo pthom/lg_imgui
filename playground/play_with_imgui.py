@@ -1,4 +1,4 @@
-import lg_imgui as imgui
+from lg_imgui import imgui
 
 
 ctx = imgui.create_context()

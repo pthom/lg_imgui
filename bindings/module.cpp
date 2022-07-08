@@ -4,11 +4,11 @@
 namespace py = pybind11;
 
 
-void py_init_module_imgui(py::module& m);
+void py_init_module_lg_imgui(py::module& m);
 
 
-// This builds the native python module (`_cpp_litgensample`),
-//    it will be wrapped in a standard python module `litgensample,
+// This builds the native python module (`_lg_imgui`),
+//    it will be wrapped in a standard python module `lg_imgui`
 //    which is located in bindings/litgensample
 PYBIND11_MODULE(_lg_imgui, m)
 {
@@ -18,5 +18,5 @@ PYBIND11_MODULE(_lg_imgui, m)
     m.attr("__version__") = "dev";
     #endif
 
-    py_init_module_imgui(m);
+    py_init_module_lg_imgui(m);
 }

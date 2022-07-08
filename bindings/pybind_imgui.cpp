@@ -12,6 +12,17 @@ namespace py = pybind11;
 
 using namespace ImGui;
 
+
+void py_init_module_imgui(py::module& m);
+
+
+void py_init_module_lg_imgui(py::module& m)
+{
+    auto module_imgui =  m.def_submodule("imgui");
+    py_init_module_imgui(module_imgui);
+}
+
+
 void py_init_module_imgui(py::module& m)
 {
     py::class_<ImGuiContext>(m, "ImGuiContext", "ImGuiContext is an opaque pointer!");

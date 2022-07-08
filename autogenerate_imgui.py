@@ -21,7 +21,7 @@ def autogenerate():
     input_cpp_header = CPP_HEADERS_DIR + "/imgui.h"
     input_cpp_header_stdlib = CPP_HEADERS_DIR + "/misc/cpp/imgui_stdlib.h"
     output_cpp_pydef_file = CPP_GENERATED_PYBIND_DIR + "/pybind_imgui.cpp"
-    output_stub_pyi_file = CPP_GENERATED_PYBIND_DIR + "/lg_imgui/__init__.pyi"
+    output_stub_pyi_file = CPP_GENERATED_PYBIND_DIR + "/lg_imgui/imgui.pyi"
     output_boxed_types_header_file = CPP_GENERATED_PYBIND_DIR + "/imgui_boxed_types.h"
 
     # Configure options
