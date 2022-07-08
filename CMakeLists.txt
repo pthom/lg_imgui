@@ -11,11 +11,8 @@ add_subdirectory(external/pybind11)
 ####################################################
 # Build imgui Bound C++ library
 ####################################################
-# Note: any sub shared library used by the bound C++ library should install its targets into the "lib/" subfolder
-
-# 1. Build imgui (lib used by implot)
 set(imgui_dir ${CMAKE_CURRENT_LIST_DIR}/external/imgui)
-add_imgui_target(${imgui_dir}) # This will install its target into lib/
+add_imgui_target(${imgui_dir})
 
 
 #########################################################################
